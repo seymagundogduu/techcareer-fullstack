@@ -1,25 +1,27 @@
-//import JsxIfElseSample from "./JsxSample/JsxIfElseSample";
-import Footer from "./templateSamples/template-2/Footer";
-import Header from "./templateSamples/template-2/Header";
-// import Footer from "./templateSamples/template-1/Footer";
-// import Header from "./templateSamples/template-1/Header";
-// import Navbar from "./templateSamples/template-1/Navbar";
-// import PageContent from "./templateSamples/template-1/PageContent";
-import Navbar from "./templateSamples/template-2/Navbar";
-import PageContent from "./templateSamples/template-2/PageContent";
+import CategoryPage from "./propSample/CategoryPage";
+import ChildComp from "./propSample/ChildComp";
+import CityList from "./propSample/CityList";
+import ProductDetail from "./propSample/ProductDetail";
+import UserDetail from "./propSample/UserDetail";
+import ArraySample from "./state/ArraySample";
+import CounterSample from "./state/CounterSample";
 
-
-//Boş düğüme Fragment denir
 function App() {
 
+  let citiesSource = ['İzmir', 'İstanbul', 'Bakü', 'Paris'];
+
+
+  const hello = () => {
+      alert('Hello React Props!!');
+  }
 
   return (
     <>
-    <Navbar/>
-    <Header/>
-    <PageContent/>
-    <Footer/>
-
+      {/* <UserDetail name='Çağatay' surname={'Yıldız'} age={18}></UserDetail>
+      <CityList cities={citiesSource}/>
+      <ChildComp merhaba={hello}/> */}
+      {/* <CounterSample/> */}
+      <ArraySample/>
     </>
   );
 }
