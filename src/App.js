@@ -16,7 +16,7 @@ import 'antd/dist/antd.css';
 import { Badge, Layout, Menu } from 'antd';
 import Customers from "./components/Customers";
 import AddCustomer from "./components/AddCustomer";
-import AddProduct from "./components/AddProduct";
+import AddProduct from "./components/AddProducts";
 import AddSupplierWithFormik from "./components/AddSupplierWithFormik";
 import Favorites from "./components/Favorites";
 import { connect, useSelector } from "react-redux";
