@@ -1,6 +1,5 @@
 export const favoriteReducer = (state = [], action) => {
 
-    console.log('ACTION', action);
     switch (action.type) {
         case 'ADD':
             return [...state, action.payload]

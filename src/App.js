@@ -16,7 +16,7 @@ import 'antd/dist/antd.css';
 import { Badge, Layout, Menu } from 'antd';
 import Customers from "./components/Customers";
 import AddCustomer from "./components/AddCustomer";
-import AddProduct from "./components/AddProducts";
+import AddProduct from "./components/AddProduct";
 import AddSupplierWithFormik from "./components/AddSupplierWithFormik";
 import Favorites from "./components/Favorites";
 import { connect, useSelector } from "react-redux";
@@ -31,7 +31,7 @@ function App(props) {
 
   const { cart } = useContext(CartContext);
 
-  let archives = useSelector(state => state);
+  let archives = useSelector(state => state.todoReducer);
 
   const items = [
     { label: <Link to='/'>Home</Link>, key: '1' },
